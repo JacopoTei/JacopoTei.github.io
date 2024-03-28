@@ -1,0 +1,118 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+h1, h2, h3, h4 {
+  color: #6c757d;
+}
+
+.balloon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('media/Picsart_23-10-16_12-53-14-642.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Disposizione dei contenuti in colonna */
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #6c757d;
+  top: 0;
+  bottom: 0;
+  left: 0%;
+  margin-left: -3px;
+}
+
+.timeline-item {
+  padding: 10px;
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: 4px solid #6c757d;
+  top: 80px;
+  left: -25px;
+  border-radius: 50%;
+  z-index: 1;
+  transform: translateX(-30%);
+}
+
+
+
+.timeline-item .timeline-content {
+  padding: 20px;
+  background-color: #e9ecef;
+  position: relative;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+/* Media query per schermi di dimensioni inferiori a 768px */
+
+
+
+/* Media query per schermi di dimensioni inferiori a 768px */
+
+
+.pallino {
+  position: relative;
+}
+
+.pallino img {
+  position: absolute;
+  top: -75px; /* Posizione verticale rispetto al testo */
+  right: 10px; /* Posizione orizzontale rispetto al testo */
+  width: 40px; /* Dimensione dell'immagine */
+  height: 40px; /* Dimensione dell'immagine */
+  border-radius: 50%;
+}
+.no-underline{
+
+  text-decoration: none;
+}
+
+@media (max-width:1000px){
+
+  .balloon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .pallino img {
+    position: absolute;
+    top: -60px; /* Posizione verticale rispetto al testo */
+    right: 10px; /* Posizione orizzontale rispetto al testo */
+   
+  }
+}
+
+
